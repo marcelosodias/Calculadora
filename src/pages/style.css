@@ -1,0 +1,95 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Container principal */
+  .calculator-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+  }
+  
+  /* Título */
+  .calculator-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Campo de entrada */
+  .calculator-display {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.5rem;
+    text-align: right;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    background: #f9f9f9;
+  }
+  
+  /* Grade dos botões */
+  .calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  /* Estilo dos botões */
+  .calculator-button {
+    padding: 15px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background: #e0e0e0;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .calculator-button:hover {
+    background: #d6d6d6;
+  }
+  
+  /* Botões de operações */
+  .calculator-button.operator {
+    background: #ff9500;
+    color: white;
+  }
+  
+  .calculator-button.operator:hover {
+    background: #e68400;
+  }
+  
+  /* Botão de limpar */
+  .calculator-button.clear {
+    background: #ff3b30;
+    color: white;
+    grid-column: span 4;
+  }
+  
+  .calculator-button.clear:hover {
+    background: #e33228;
+  }
+  
+  /* Botão de igual */
+  .calculator-button.equal {
+    background: #34c759;
+    color: white;
+  }
+  
+  .calculator-button.equal:hover {
+    background: #2eae4e;
+  }
+  
